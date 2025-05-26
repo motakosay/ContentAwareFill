@@ -111,5 +111,5 @@ def content_aware_fill(image_path):
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-    image_path = 't.jpg'
+    image_path = '/content/ContentAwareFill/t.jpg'
     content_aware_fill(image_path)
