@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 from skimage import restoration
+from skimage.restoration import inpaint
 from google.colab.patches import cv2_imshow
 import matplotlib.pyplot as plt
 
