@@ -19,7 +19,7 @@ def content_aware_fill(image_path):
     cv2.rectangle(mask, (w//3, h//3), (2*w//3, 2*h//3), 255, -1)
 
     # Perform content-aware filling
-    filled = inpaint.inpaint_biharmonic(image, mask, multichannel=(image.shape[-1] == 3))
+    filled = inpaint.inpaint_biharmonic(image, mask)
 
     # Show original and filled images
     print("Original Image:")
